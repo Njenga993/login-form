@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #e0e5ec;
+            font-family: Arial, sans-serif;
+        }
+
+        .neumorphic {
+            background: #e0e5ec;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .neumorphic-inset {
+            background: #e0e5ec;
+            border-radius: 20px;
+            box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+        }
+
+        .neumorphic-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            width: 350px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .neumorphic-input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .neumorphic-button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .neumorphic-button:hover {
+            box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+        }
+
+        .register-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 400px) {
+            .neumorphic-card {
+                width: 90%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="neumorphic neumorphic-card">
+        <h1>Login</h1>
+        <input type="text" class="neumorphic neumorphic-input" placeholder="Username">
+        <input type="password" class="neumorphic neumorphic-input" placeholder="Password">
+        <button class="neumorphic neumorphic-button">Sign In</button>
+        <p class="register-link">No account? <a href="#">Register here</a></p>
+    </div>
+</body>
+</html>
